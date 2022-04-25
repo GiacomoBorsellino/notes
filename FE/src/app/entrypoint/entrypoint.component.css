@@ -1,0 +1,130 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 60vh;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.signupLogin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.signup {
+    width: 90%;
+}
+
+.signup div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.login div {
+    margin: auto;
+    text-align: center;
+}
+
+.signupLogin input {
+    border-radius: 5px;
+    border: 1px solid rgb(24, 24, 24);
+    background-color: white;
+    height: 3rem;
+    text-align: center;
+    color: rgb(24, 24, 24);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.signupLogin input:focus {
+    outline: none;
+}
+
+.adventure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../../assets/Img/library.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.adventure div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    margin: auto;
+    padding: 3rem;
+}
+
+.adventure input {
+    border-radius: 5px;
+    height: 3rem;
+    width: 70%;
+    border: none;
+    text-align: center;
+    color: rgb(24, 24, 24);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.adventure input:focus {
+    outline: none;
+}
+
+.adventure button {
+    border: none;
+    text-align: center;
+    color: rgb(24, 24, 24);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    font-weight: 700;
+    height: 2rem;
+    width: 30%;
+    cursor: pointer;
+}
+

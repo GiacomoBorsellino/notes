@@ -1,0 +1,49 @@
+<section>
+    <div class="container">
+        <!-- SIGNUP/LOGIN -->
+        <div class="signupLogin">
+
+            <span class="buttons">
+                <button >Registrati</button>
+                <button>Log-in</button>
+            </span>
+
+            <!-- SIGNUP -->
+            <div *ngIf="signup" class="signup">
+                <div>
+                    <label>Username</label>
+                    <input type="text" placeholder="username">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="email">
+                    <label>Password</label>
+                    <input type="password" placeholder="password">
+                    <button>Invia</button>
+                </div>
+            </div>
+
+            <!-- LOGIN -->
+            <div *ngIf="login" class="login">
+                <div>
+                    <input type="email" placeholder="email">
+                    <input type="password" placeholder="password">
+                    <button>Invia</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- JOIN THE ADEVENTURE -->
+        <div class="adventure">
+            <div>
+                <h2>Join the Adventure</h2>
+                <p>
+                    "Scopri il segreto dietro la scomparsa di Joan McMurdo, e trova il codice che ti porterà
+                    a scovare il suo tesoro!"<br>
+                    <sub><strong>Nota:</strong> puoi ugualmente raggiungere il tesoro registrandoti, ma il codice ti permetterà di sbloccare un segreto!</sub>
+                </p>            
+                <input type="text">
+                <button>Invia</button>
+            </div>
+        </div>            
+    </div>
+</section>

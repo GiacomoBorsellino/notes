@@ -1,0 +1,52 @@
+.background {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url(../../assets/books/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.books {
+    display: flex;
+    flex-direction: row;
+    font-size: 0px;
+}
+
+.books img:hover {
+    width: 97%;
+    filter: drop-shadow(-1px 20px 2px rgba(49, 49, 49, 0.473));
+    cursor: pointer;
+}
+
+.egg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 20%;
+    box-shadow: -5px 5px 4px -7px rgba(31, 31, 31, 0.52);
+}
+
