@@ -1,13 +1,12 @@
 <div class="background">
-</div>
-
-<img class="egg" src="../../assets/books/egg.png" alt="egg">
-
+    
+    <img class="egg" src="../../assets/books/egg.png" alt="egg">
+    
 <section>
     <div class="books" cdkDropList cdkDropListOrientation="horizontal" (cdkDropListDropped)="dropped($event)">
-        <img class="book" *ngFor="let book of books" (click)="clicking(book)" src="{{book}}" cdkDrag/>
+        <img class="book" *ngFor="let book of books" (click)="clicking(book.id)" src="{{book.path}}" cdkDrag/>
     </div>
     <img src="../../assets/books/shelf.png" >
 </section>
-  
-  
+
+</div>
