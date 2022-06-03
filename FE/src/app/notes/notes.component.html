@@ -1,23 +1,13 @@
 <div class="background">
 </div>
-<section>
-    <div class="container">
-        <div class="books">
-            <a><img src="../../assets/books/book1.png" alt="book1"></a>
-            <a><img src="../../assets/books/book2.png" alt="book2"></a>
-            <a><img src="../../assets/books/book3.png" alt="book3"></a>
-            <a><img src="../../assets/books/book4.png" alt="book4"></a>
-            <a><img src="../../assets/books/book5.png" alt="book5"></a>
-            <a><img src="../../assets/books/book6.png" alt="book6"></a>
-            <a><img src="../../assets/books/book7.png" alt="book7"></a>
-            <a><img src="../../assets/books/book8.png" alt="book8"></a>
-        </div>
-
-        <div class="shelf">
-            <img src="../../assets/books/shelf.png" alt="shelf">
-        </div>
-
-    </div>
-</section>
 
 <img class="egg" src="../../assets/books/egg.png" alt="egg">
+
+<section>
+    <div class="books" cdkDropList cdkDropListOrientation="horizontal" (cdkDropListDropped)="dropped($event)">
+        <img class="book" *ngFor="let book of books" (click)="clicking(book)" src="{{book}}" cdkDrag/>
+    </div>
+    <img src="../../assets/books/shelf.png" >
+</section>
+  
+  
