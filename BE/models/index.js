@@ -27,10 +27,10 @@ db.sequelize = sequelize;
 db.user = require("../models/user.model")(sequelize, Sequelize);
 
 // ATTENZIONE! : Drop Tabelle
-/* 
-db.sequelize.sync({force: true}).then(() => {
+ 
+db.sequelize.sync({alter: true}).then(() => {
     console.log('Drop e Resync Database con { force: true }');
 }); 
-*/
+
 
 module.exports = db;

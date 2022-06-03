@@ -27,7 +27,8 @@ exports.signup = (request, response) => {
         {
             username:user.username,
             email:user.email,
-            password:bcrypt.hashSync(user.password, 8)
+            password:bcrypt.hashSync(user.password, 8),
+            notes: user.notes
         }
     ) 
     .then((user) => {

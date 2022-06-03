@@ -20,7 +20,7 @@ const verifySignUp = require('../middleware/verifySignUp');
 const { authJwt } = require("../middleware");
 
 /* REGISTRAZIONE UTENTE */
-router.post('/api/v1/signup', verifySignUp, controller.signup); 
+router.post('/api/v1/signup', controller.signup); 
 
 /* LOGIN UTENTE */ 
 router.post('/api/v1/login', controller.login); 
