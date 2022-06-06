@@ -47,7 +47,7 @@ export class NotesComponent implements OnInit {
 
         if(booksStringed == booksCombination) {
           // console.log('Combinazione esatta')
-          alert('Leoculo')
+          alert('Do you really want to find out the secret of Mr. McMurdo?')
         }
       }
 
